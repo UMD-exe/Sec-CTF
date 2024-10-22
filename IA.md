@@ -32,5 +32,25 @@ CVE-2019-18935で正解だった。
 <img src=https://github.com/user-attachments/assets/480aa664-ff24-41e4-b842-ef86d7308eee wdth="200">  
 
 
+下記のログが初めて攻撃が成功した時間↓
+<img src=https://github.com/user-attachments/assets/89ea1892-3631-4808-9384-beb10c487d44 wdth="200">   
+
+そこで近しい時間に作られたファイルをMFTから抽出して表示↓
+<img src=https://github.com/user-attachments/assets/a312c59a-8491-4026-a32a-04062c68b981 wdth="200">   
+
+1617245455.5314393.dll
+
+***
+# 問題IA-4
+<img src=https://github.com/user-attachments/assets/f2d62623-b88f-47d2-8215-1bc734eb87fa wdth="200">
+
+「1617245455.5314393.dll」がダウンロードの確認に使われていることから、これより後に本体をダウンロードしている可能性が高い
+
+<img src=https://github.com/user-attachments/assets/6d8fc4a1-d88f-434e-b7db-c5f2a4d66068 wdth="200">  
+
+App_Web_aa0aecbt.dllというあからさまに名前が怪しいものが直後にダウンロードされている
+。
+
+2021-04-01 02:55:29
 
 
