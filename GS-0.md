@@ -8,3 +8,29 @@
 
 これがフラグ↓  
 <img src=https://github.com/user-attachments/assets/4699663c-78a2-4df8-81c2-4dbe00022a1c width="400">
+
+***
+
+# 問題
+<img src=https://github.com/user-attachments/assets/fab807a3-c876-4d02-b017-690a98ad052b wdth="300">
+
+<img src=https://github.com/user-attachments/assets/1fa411d9-5c85-445d-b816-229b444cefc6 wdth="300">
+
+9個
+
+***
+# 問題
+<img src=https://github.com/user-attachments/assets/cd05f457-e1e9-4abf-8219-3c1f0e942db8 width="300">
+
+***
+# 解法
+<img src=https://github.com/user-attachments/assets/208516bb-8683-4ef4-9e99-ba4e466e14ea width="500">
+
+```
+certutil -hashfile memory.raw MD5
+```
+
+20b25f76cc1839c2e7759a69a82bf664
+
+***
+# 問題
