@@ -44,7 +44,8 @@ Account Domain:		ALIEN
 ```
 これらが探知された可能性のあるもの。
 ここで、「IIS APPPOOL」のドメイングループで検索すると
-![image](https://github.com/user-attachments/assets/f12a9e57-0297-4c35-8a10-7f1c215aa869)  
+![image](https://github.com/user-attachments/assets/c298aafd-2838-4dcf-ad1b-ab50770ed153)
+
 ３月ごろまではlocalhostに向けた操作しかしていなかったのに急に
 orp-webdev.alien.localに対して操作を始めている。
 
