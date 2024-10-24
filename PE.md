@@ -82,7 +82,7 @@ DMZと比較したときに、「alien_db」だけが権限付きで唯一存在
 ファイル名が「Windows NUPdate」のタスクをイベントログ「Microsoft-Windows-TaskScheduler%4Maintenance」から探すと  
 ![image](https://github.com/user-attachments/assets/7a5015c3-b561-4d19-ba9e-894ba2007712)  
 
-2121/04/01 12:29:23なのでUTFに直して **2121/04/01 12:29:23**
+
 
 ***
 # PE-6
@@ -90,4 +90,4 @@ DMZと比較したときに、「alien_db」だけが権限付きで唯一存在
 
 ![image](https://github.com/user-attachments/assets/d172d755-06b7-49de-a8d2-6d64a2bcb368)
 
-
+2121/04/01 12:29:23なのでUTFに直して **2121/04/01 12:29:23**
