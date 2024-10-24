@@ -59,6 +59,34 @@ orp-webdev.alien.localに対して操作を始めている。
 
 ![image](https://github.com/user-attachments/assets/cda9413e-d5b2-4f59-9b44-5186a8951df5)
 
-DMZと比較したときに、「alien_db」だけが権限付きで唯一存在しているため、狙うならこのアカウントだと考えた。
+DMZと比較したときに、「alien_db」だけが権限付きで唯一存在しているため、狙うならこのアカウントだと考えた。  
+
+***
+# PE-04
+![image](https://github.com/user-attachments/assets/a6903af2-3880-4166-9d2c-c87ff3c6f64a)
+
+「alien_db」が最初にログインしたときのものを探してUTFに変換
+![image](https://github.com/user-attachments/assets/a47d5c84-5e9a-43db-af28-e2068c0e5127)
+
+**2021-04-01 03:29:23**
+
+***
+# PE-05
+![image](https://github.com/user-attachments/assets/750f3364-4fb6-4523-891c-6a771e14a27a)
+
+ユーザが「alien_db」が作らせる前にタスクが生成されている。
+おそらく永続化のための処理
+![image](https://github.com/user-attachments/assets/479badf7-741c-4365-8667-d1fdf6d19dcd)  
+
+ファイル名が「Windows NUPdate」のタスクをイベントログ「Microsoft-Windows-TaskScheduler%4Maintenance」から探すと  
+![image](https://github.com/user-attachments/assets/7a5015c3-b561-4d19-ba9e-894ba2007712)  
+
+2121/04/01 12:29:23なのでUTFに直して **2121/04/01 12:29:23**
+
+***
+# PE-6
+![image](https://github.com/user-attachments/assets/07123341-55d0-4b71-9aff-ae5d8470fdbe)
+
+![image](https://github.com/user-attachments/assets/d172d755-06b7-49de-a8d2-6d64a2bcb368)
 
 
