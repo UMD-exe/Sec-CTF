@@ -98,7 +98,40 @@ ntds.ditとntds.jfmが怪しげ。ググってみると
 これが今回のログ
 ![image](https://github.com/user-attachments/assets/2dd6dee1-3120-4fea-8559-8538d636a7f2)  
 
-「C:\Windows\System32\ntdsutil.exe」が
+
+ad.zipが生成されていることからこれの大本を探す。
+.\Temp関連で探すと、  
+![image](https://github.com/user-attachments/assets/da300eea-15b4-4425-902d-2ac9b90c2aab)
+
+ntds.ditとntds.jfmがある。これをさらに深堀してみる。
+![image](https://github.com/user-attachments/assets/be92280c-34dd-4ce0-b328-7fd4c6eaf636)  
+
+Ntds.dit ファイルは、ユーザー オブジェクト、グループ、グループ メンバーシップに関する情報を含む Active Directory データを保存するデータベースで、ドメイン内のすべてのユーザーのパスワード ハッシュが含まれている。
+![image](https://github.com/user-attachments/assets/b95e60e2-624e-4bf7-b1bd-f5cc6efb7fa4)  
+セキュリティログにこれの関連がないか検索すると案の定「C:\Windows\System32\ntdsutil.exe」が存在していた。
+
+***
+# DD-7
+![image](https://github.com/user-attachments/assets/0667eec2-bbed-4771-898d-57610470e7d4)  
+このことから、corp-webdevからのログを調べれば何かしら、出てきそう。  
+![image](https://github.com/user-attachments/assets/dda53a94-0c66-48af-b332-78ff15f8f11b)
+
+```
+2021-04-01 06:18:53 - アカウントを使用した corp-webdev から corp-file への SMB アクセス試行re_bmilton
+2021-04-01 06:18:53 - corp-file セキュリティ イベント ログにイベント ID 4624 (アカウントが正常にログオンされました) が記録されました
+```
+re_bmiltonに対する正常ログオンが見て取れる
+
+***
+# DD-8
+![image](https://github.com/user-attachments/assets/450b2a69-0c71-4284-af20-d97a96ac1b5f)  
+攻撃者がずっとTempフォルダで何かした生成していることから2021-04-01 06:18:53以降に何か作れれていないか確認すると、
+![image](https://github.com/user-attachments/assets/f425971e-3a6e-4ddc-b384-a7b44762d777)  
+
+filedir.txtが`2021-04-01 06:19:19`に生成されているのが、確認できる。
+
+
+
 
 
 
